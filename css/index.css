@@ -140,16 +140,43 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.titleBar h1 {
-  font-size: 5rem;
+@media (max-width: 1200px) {
+  .titleBar {
+    flex-direction: column;
+  }
 }
 .titleBar nav {
   word-spacing: 3rem;
+}
+@media (max-width: 1200px) {
+  .titleBar nav {
+    margin-top: 5vh;
+  }
 }
 .titleBar nav a {
   font-size: 2rem;
   color: black;
   text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+@media (max-width: 1200px) {
+  .titleBar nav a {
+    padding: 2%;
+    border-radius: 15px;
+    background-color: #ff9233;
+    border: 1px grey inset;
+  }
+}
+.titleBar nav :hover {
+  color: #ff9233;
+}
+@media (max-width: 1200px) {
+  .titleBar nav :hover {
+    color: white;
+  }
+}
+.titleBar h1 {
+  font-size: 5rem;
 }
 .navBar {
   background: #ff9233;
@@ -161,12 +188,41 @@ body {
   justify-content: space-between;
   width: 55%;
 }
+@media (max-width: 1200px) {
+  .navBar .navButtons {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 700px) {
+  .navBar .navButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .navBar .navButtons a {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+@media (max-width: 700px) {
+  .navBar .navButtons a {
+    margin: 0.5vh;
+    padding: 1vh;
+    border: 1px grey inset;
+    border-radius: 15px;
+  }
+}
+.navBar .navButtons :hover {
+  color: white;
 }
 .background {
   width: 100%;
   height: 78vh;
+}
+@media (max-width: 700px) {
+  .background {
+    height: 60vh;
+  }
 }
