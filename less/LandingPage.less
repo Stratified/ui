@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+body {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.titleBar {
+  background-color: white;
+  margin: 1%;
+  display: flex;
+  justify-content: space-between;
+
+  @media @1200 {
+    flex-direction: column;
+  }
+  nav {
+    word-spacing: 3rem;
+    @media @1200 {
+      margin-top: 5%;
+      text-align: center;
+    }
+    @media @700 {
+      text-align: center;
+    }
+    a {
+      font-size: 2rem;
+      color: black;
+      text-decoration: none;
+      transition: ease-in-out 0.2s;
+      @media @1200 {
+        padding: 2%;
+        border-radius: 15px;
+        background-color: @orange;
+        border: 1px grey inset;
+      }
+    }
+    :hover {
+      color: @orange;
+      @media @1200 {
+        color: white;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 5rem;
+    @media @1200 {
+      text-align: center;
+    }
+    @media @360 {
+      font-size: 4rem;
+    }
+  }
+}
+
+.welcome {
+  background: @orange;
+  margin-top: 3%;
+  padding: 1%;
+
+  @media @700 {
+    margin-top: 5%;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.background {
+  width: 100%;
+  height: 70vh;
+  opacity: 0.75;
+
+  @media @1200 {
+    height: 60vh;
+  }
+  @media @700 {
+    height: 100vh;
+  }
+  @media (max-width: 500px) {
+    height: 100vh;
+  }
+  @media @360 {
+    height: 80vh;
+  }
+}
+
+.browse {
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 2%;
+  width: 40%;
+  z-index: 1;
+
+  @media @1200 {
+    width: 70%;
+    margin-top: 5%;
+  }
+
+  @media @700 {
+    width: 70%;
+    margin-top: 5%;
+  }
+
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+  h1 {
+    font-size: 7rem;
+    margin-bottom: 2%;
+    @media @360 {
+      font-size: 5rem;
+    }
+  }
+  p {
+    width: 90%;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    word-spacing: 0.7rem;
+    @media @360 {
+      font-size: 1.5rem;
+      word-spacing: 0.2rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+.buttons {
+  padding: 1%;
+
+  @media @1200 {
+    margin-top: 2vh;
+    text-align: center;
+  }
+
+  @media @700 {
+    margin-top: 2vh;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    margin: 2vw;
+    padding: 1vh 2vw;
+    font-size: 2rem;
+    background-color: @orange;
+    border: 1px gray inset;
+    border-radius: 10px;
+    transition: ease-in-out 0.4s;
+
+    @media @360 {
+      font-size: 1.4rem;
+    }
+  }
+  :hover {
+    color: white;
+  }
+}
