@@ -48,7 +48,7 @@ body {
     @media @1200 {
       text-align: center;
     }
-    @media @360 {
+    @media @700 {
       font-size: 4rem;
     }
   }
@@ -56,8 +56,7 @@ body {
 
 .welcome {
   background: @orange;
-  margin-top: 3%;
-  padding: 1%;
+  .padAndMarTop(1.22%, 3%);
 
   @media @700 {
     margin-top: 5%;
@@ -71,25 +70,6 @@ body {
   }
 }
 
-.background {
-  width: 100%;
-  height: 70vh;
-  opacity: 0.75;
-
-  @media @1200 {
-    height: 60vh;
-  }
-  @media @700 {
-    height: 100vh;
-  }
-  @media (max-width: 500px) {
-    height: 100vh;
-  }
-  @media @360 {
-    height: 80vh;
-  }
-}
-
 .browse {
   position: absolute;
   margin-top: 7%;
@@ -98,13 +78,11 @@ body {
   z-index: 1;
 
   @media @1200 {
-    width: 70%;
-    margin-top: 5%;
+    .widthAndMarTop(70%, 5%);
   }
 
   @media @700 {
-    width: 70%;
-    margin-top: 5%;
+    .widthAndMarTop(70%, 5%);
   }
 
   @media (max-width: 500px) {
@@ -113,7 +91,10 @@ body {
   h1 {
     font-size: 7rem;
     margin-bottom: 2%;
-    @media @360 {
+    @media @1200 {
+      font-size: 6rem;
+    }
+    @media @500 {
       font-size: 5rem;
     }
   }
@@ -124,7 +105,7 @@ body {
     line-height: 2.5rem;
     font-size: 2rem;
     word-spacing: 0.7rem;
-    @media @360 {
+    @media @500 {
       font-size: 1.5rem;
       word-spacing: 0.2rem;
       line-height: 2rem;
@@ -147,19 +128,24 @@ body {
   a {
     text-decoration: none;
     color: black;
-    margin: 2vw;
-    padding: 1vh 2vw;
+    .padAndMar(1vh 2vw, 2vw);
     font-size: 2rem;
     background-color: @orange;
     border: 1px gray inset;
     border-radius: 10px;
     transition: ease-in-out 0.4s;
 
-    @media @360 {
+    @media @500 {
       font-size: 1.4rem;
     }
   }
   :hover {
     color: white;
   }
+}
+
+.background {
+  width: 100%;
+  height: 70vh;
+  opacity: 0.75;
 }

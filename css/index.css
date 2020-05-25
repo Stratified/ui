@@ -175,13 +175,10 @@ body {
     color: white;
   }
 }
-.titleBar h1 {
-  font-size: 5rem;
-}
 .navBar {
   background: #ff9233;
-  margin-top: 7vh;
   padding: 1.5%;
+  margin-top: 3%;
 }
 .navBar .navButtons {
   display: flex;
@@ -208,8 +205,8 @@ body {
 }
 @media (max-width: 700px) {
   .navBar .navButtons a {
-    margin: 0.5vh;
     padding: 1vh;
+    margin: 0.5vh;
     border: 1px grey inset;
     border-radius: 15px;
   }
@@ -220,11 +217,6 @@ body {
 .background {
   width: 100%;
   height: 78vh;
-}
-@media (max-width: 700px) {
-  .background {
-    height: 60vh;
-  }
 }
 body {
   font-family: Raleway;
@@ -286,15 +278,15 @@ body {
     text-align: center;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 700px) {
   .titleBar h1 {
     font-size: 4rem;
   }
 }
 .welcome {
   background: #ff9233;
+  padding: 1.22%;
   margin-top: 3%;
-  padding: 1%;
 }
 @media (max-width: 700px) {
   .welcome {
@@ -306,31 +298,6 @@ body {
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
-}
-.background {
-  width: 100%;
-  height: 70vh;
-  opacity: 0.75;
-}
-@media (max-width: 1200px) {
-  .background {
-    height: 60vh;
-  }
-}
-@media (max-width: 700px) {
-  .background {
-    height: 100vh;
-  }
-}
-@media (max-width: 500px) {
-  .background {
-    height: 100vh;
-  }
-}
-@media (max-width: 360px) {
-  .background {
-    height: 80vh;
-  }
 }
 .browse {
   position: absolute;
@@ -360,7 +327,12 @@ body {
   font-size: 7rem;
   margin-bottom: 2%;
 }
-@media (max-width: 360px) {
+@media (max-width: 1200px) {
+  .browse h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 500px) {
   .browse h1 {
     font-size: 5rem;
   }
@@ -373,7 +345,7 @@ body {
   font-size: 2rem;
   word-spacing: 0.7rem;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .browse p {
     font-size: 1.5rem;
     word-spacing: 0.2rem;
@@ -398,19 +370,24 @@ body {
 .buttons a {
   text-decoration: none;
   color: black;
-  margin: 2vw;
   padding: 1vh 2vw;
+  margin: 2vw;
   font-size: 2rem;
   background-color: #ff9233;
   border: 1px gray inset;
   border-radius: 10px;
   transition: ease-in-out 0.4s;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .buttons a {
     font-size: 1.4rem;
   }
 }
 .buttons :hover {
   color: white;
+}
+.background {
+  width: 100%;
+  height: 70vh;
+  opacity: 0.75;
 }

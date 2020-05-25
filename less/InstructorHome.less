@@ -38,16 +38,11 @@ body {
       }
     }
   }
-
-  h1 {
-    font-size: 5rem;
-  }
 }
 
 .navBar {
   background: @orange;
-  margin-top: 7vh;
-  padding: 1.5%;
+  .padAndMarTop(1.5%, 3%);
 
   .navButtons {
     display: flex;
@@ -71,8 +66,7 @@ body {
       transition: ease-in-out 0.2s;
 
       @media @700 {
-        margin: 0.5vh;
-        padding: 1vh;
+        .padAndMar(1vh, 0.5vh);
         border: 1px grey inset;
         border-radius: 15px;
       }
@@ -86,8 +80,4 @@ body {
 .background {
   width: 100%;
   height: 78vh;
-
-  @media @700 {
-    height: 60vh;
-  }
 }
